@@ -53,7 +53,7 @@ cd D:\Claude\mutasim-portfolio
 git add .
 git commit -m "Publish portfolio website"
 git branch -M main
-git remote add origin https://github.com/1467mutasim-ctrl/YOUR-REPOSITORY.git
+git remote add origin https://github.com/1467mutasim-ctrl/MTB-Portfolio.git
 git push -u origin main
 ```
 
