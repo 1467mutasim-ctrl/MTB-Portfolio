@@ -1,87 +1,83 @@
-# Mutasim Billah — Portfolio
+<p align="center">
+  <a href="https://1467mutasim-ctrl.github.io/MTB-Portfolio/"><img src="dist/assets/og-image.jpg" alt="Mutasim Billah: ICT undergraduate at BUP building robots, embedded devices, and software" width="100%"></a>
+</p>
 
-A responsive static portfolio for Mutasim Billah, featuring robotics projects, achievements, selected photography, public repositories, and contact links.
+<p align="center">
+  <a href="https://1467mutasim-ctrl.github.io/MTB-Portfolio/"><b>Live portfolio</b></a> ·
+  <a href="https://1467mutasim-ctrl.github.io/MTB-Portfolio/assets/Mutasim-Billah-CV.pdf">Download CV</a> ·
+  <a href="https://www.linkedin.com/in/mutasim-billah-63a30439b/">LinkedIn</a> ·
+  <a href="mailto:1467mutasim@gmail.com">Email</a>
+</p>
 
-## What is included
+---
 
-- Cover photo and profile introduction with CV, LinkedIn, and GitHub links
-- Project case studies: CPU Scheduler Visualizer (featured), Robo Soccer, Pagla Ghora LFR, ESP32 builds, DurontoJatra, and QuadBits AgroBot
-- Competition results and leadership roles, with photos that open in the full-image viewer
-- Photography stories with short captions and expandable backstories
-- Links to email, LinkedIn, GitHub, Facebook, Instagram, and WhatsApp
-- A social preview image (`assets/og-image.jpg`) for link shares
-- A one-page downloadable CV generated from `tools/cv-profile.json`
-- A GitHub Pages workflow that publishes the contents of `dist/`
+## About me
 
-## Project structure
+I'm studying Information and Communication Engineering at **Bangladesh University of Professionals (BUP)**, batch 2023. I design around ESP32 and Arduino, write the firmware, and take my robots to national competitions. My soccer robot finished **runners-up at the National Robotics Championship 2025**.
 
-```text
-dist/                         Published website files
-  assets/images/              Optimized WebP images used by the site
-  assets/manrope-variable.woff2  Self-hosted Manrope font (all weights, SIL OFL, see assets/OFL.txt)
-  assets/og-image.jpg         1200x630 preview image for social link shares
-  index.html                  Page content and photo captions
-  styles.css                  Design and responsive layout
-  app.js                      Mobile menu and full-image viewer
-tools/serve.mjs               Local static preview server
-tools/import-images.mjs       Local image conversion helper
-tools/build-cv.py             Generates the CV PDF from tools/cv-profile.json
-.github/workflows/pages.yml   GitHub Pages deployment workflow
-```
+Right now I'm learning PCB design and full-stack web development, and I'm open to internships and collaborations in robotics, embedded systems, and software. Away from the workbench, I photograph the world that keeps me curious.
 
-## Preview the site locally
+## Featured projects
 
-No package installation is needed to preview the current website. From the project folder, run:
+<table>
+  <tr>
+    <td width="33%"><img src="dist/assets/images/projects/cpu-scheduler.webp" alt="CPU Scheduler Visualizer board"></td>
+    <td width="33%"><img src="dist/assets/images/projects/robosoccer-robofest-2024-crop.webp" alt="Team with the soccer robot at EWU National RoboFest 2024"></td>
+    <td width="33%"><img src="docs/images/lfr-head-hunter-3x2.webp" alt="Head Hunter line-following robot"></td>
+  </tr>
+  <tr>
+    <td><b>CPU Scheduler Visualizer</b><br>Handheld ESP32 device that steps through FCFS, SJF, SRTF, Priority, and Round Robin on two displays.</td>
+    <td><b>Robo Soccer robot</b><br>Designed and built from scratch. Runners-up at NRC 2025, 4th at IUBAT.</td>
+    <td><b>Line-following robots</b><br>Mark-X and Head Hunter: PD control, 16-sensor array, junction priority, and finish-box auto-stop.</td>
+  </tr>
+</table>
 
-```powershell
-node tools/serve.mjs
-```
+| Project | What it is | Built with |
+|---|---|---|
+| [CPU Scheduler Visualizer](https://github.com/1467mutasim-ctrl/CPU-Scheduler) | Teaches CPU scheduling with step-by-step playback, a live Gantt chart, scheduling metrics, and a Compare All mode | C++, ESP32, SSD1306, ST7789 |
+| Robo Soccer robot | Competition soccer robot, designed and built from scratch | Robotics hardware |
+| Pagla Ghora LFR | Line followers that handle gaps, junctions, and inverted sections | Arduino, ESP32, PD control |
+| ESP32 builds | Wireless signal analyzer (Wi-Fi channels, Bluetooth scanning) and a smart clock with weather | ESP32, nRF24, OLED/IPS displays |
+| [Art Attack](https://github.com/1467mutasim-ctrl/Art_Attack) | Art community and marketplace with team battles, moderation, checkout, and PDF receipts | Python, Flask, SQLAlchemy, MySQL |
+| [Restaurant Management System](https://github.com/1467mutasim-ctrl/Restaurant-Management-System) | Staff roles, reservations, orders, and billing on a built-in web server | Java |
+| Q-Less Printing *(in progress)* | Web-based printing service for the BUP Reproduction section | React, TypeScript, Node.js, PostgreSQL |
 
-Then open `http://127.0.0.1:4318` in your browser. Stop the preview with `Ctrl + C` in the terminal.
+Team projects: **Aqua Guard** with Team DurontoJatra and **AgroBot** with Team QuadBits.
 
-## Update content
+## Achievements
 
-- Edit `dist/index.html` for text, project cards, links, and photo stories.
-- Edit `dist/styles.css` for layout, colours, and responsive behaviour.
-- Put replacement website images in `dist/assets/images/` and update the matching path in `dist/index.html`.
+- **Runners-up, Robo Soccer**: National Robotics Championship 2025
+- **Top 10, Robo Fusion (UFTB)** with Team DurontoJatra; qualified for the World SDG Challenge 2026 in Kuala Lumpur
+- **4th place, Soccer Bot**: IUBAT Robotics Competition
+- **5th place**: Machine Mania 3.0, BUTEX
+- **Exhibited AgroBot** at Bangladesh Innovation Fair 2026 with Team QuadBits
+- **Silver and bronze medals, Taekwondo**: National Games 2016 and 2017
 
-The `tools/import-images.mjs` helper converts the original image folders into WebP files. It is intended for this local workspace; the published site only needs the ready-to-use files already inside `dist/`.
+## Leadership
 
-The downloadable CV is generated from `tools/cv-profile.json`. After changing the facts there, install ReportLab once with `python -m pip install reportlab`, then run `python tools/build-cv.py`. The script writes a review copy in `output/pdf/` and updates the website copy at `dist/assets/Mutasim-Billah-CV.pdf`. Check that it still fits on one page.
+- **Technical Team Head, Circuit Clash 1.0**: led technical operations for a national-level engineering competition
+- **Technical Lead, SafetyPod**: led the technical work on a team-built safety device
+- **Contributor, Soccer Bot Workshop**: helped participants with robot movement, control, and hardware integration
 
-`.gitattributes` marks PDFs, images, and fonts as binary so Git never rewrites their line endings. Without it, Windows line-ending conversion can corrupt the CV PDF.
+## Skills
 
-The canonical URL and `og:image` in `dist/index.html` point to the live site at `https://mutasim-billah-portfolio.ekincihalime54.chatgpt.site/`. If you move the site to GitHub Pages or a custom domain, update those tags and the `portfolio` link in `tools/cv-profile.json`.
+- **Languages:** C, C++, Java, Python, SQL, HTML, CSS
+- **Embedded & hardware:** ESP32, Arduino, ESP-IDF, PD motor control, sensor arrays and multiplexers, I²C/SPI displays, nRF24 radios
+- **Software & tools:** Git, VS Code, Arduino IDE, Flask, SQLAlchemy, MySQL, PostgreSQL, MATLAB, Cisco Packet Tracer
+- **Learning:** PCB design, React, TypeScript, Node.js
 
-## Push updates to GitHub
+## Photography
 
-This folder is already connected to `https://github.com/1467mutasim-ctrl/MTB-Portfolio`. To publish changes:
+The portfolio also has a section of my best photographs, each with the story behind it. [See them on the site](https://1467mutasim-ctrl.github.io/MTB-Portfolio/#photography).
 
-```powershell
-git add .
-git commit -m "Update portfolio"
-git push
-```
+## About this site
 
-## Publish with GitHub Pages
+Hand-written HTML, CSS, and vanilla JavaScript with no framework or build step. It is deployed to GitHub Pages by a GitHub Actions workflow on every push to `main`, and the CV is generated from a JSON file with Python and ReportLab. To preview or update it, see [docs/MAINTAINING.md](docs/MAINTAINING.md).
 
-After the first push:
+## Contact
 
-1. Open the repository on GitHub.
-2. Go to **Settings** → **Pages**.
-3. Under **Build and deployment**, choose **GitHub Actions** as the source.
-4. Open the **Actions** tab and wait for **Deploy Portfolio to GitHub Pages** to finish.
+- Email: [1467mutasim@gmail.com](mailto:1467mutasim@gmail.com)
+- LinkedIn: [mutasim-billah-63a30439b](https://www.linkedin.com/in/mutasim-billah-63a30439b/)
+- GitHub: [1467mutasim-ctrl](https://github.com/1467mutasim-ctrl)
 
-Your site will be available at:
-
-```text
-https://1467mutasim-ctrl.github.io/MTB-Portfolio/
-```
-
-Every push to `main` will publish the latest contents of `dist/` automatically. This workflow follows GitHub’s recommended Pages deployment pattern using a deployment artifact and the official Pages actions. [GitHub’s Pages workflow guide](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)
-
-## Notes
-
-- Keep `dist/` in the repository. It is the website that GitHub Pages publishes.
-- Keep `reference/` private. It is ignored by Git and is not needed for the live site.
-- Avoid putting private API keys, passwords, or personal documents in the repository.
+<p align="center"><sub>© 2026 Mutasim Billah</sub></p>
