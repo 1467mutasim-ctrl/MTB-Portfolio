@@ -1,0 +1,6 @@
+reference/
+tools/inspect_assets.py
+node_modules/
+*.zip
+*.log
+output/

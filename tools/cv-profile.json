@@ -1,0 +1,109 @@
+{
+  "name": "Mutasim Billah",
+  "headline": "ICT Undergraduate · Robotics & Embedded Systems",
+  "location": "Dhaka, Bangladesh",
+  "email": "1467mutasim@gmail.com",
+  "phone": "+880 1774-452374",
+  "linkedin": "https://www.linkedin.com/in/mutasim-billah-63a30439b/",
+  "github": "https://github.com/1467mutasim-ctrl",
+  "portfolio": "https://mutasim-billah-portfolio.ekincihalime54.chatgpt.site",
+  "summary": "ICT undergraduate at Bangladesh University of Professionals who designs and builds robots and ESP32-based devices, from wiring and firmware to competition day. Robo Soccer runners-up at the National Robotics Championship 2025. Learning PCB design and full-stack web development; seeking internships in embedded systems, robotics, or software.",
+  "education": [
+    {
+      "degree": "B.Sc. in Information and Communication Engineering",
+      "school": "Bangladesh University of Professionals (BUP), Dhaka",
+      "dates": "2023 – Present"
+    }
+  ],
+  "skills": [
+    [
+      "Languages",
+      "C, C++, Java, Python, SQL, HTML, CSS"
+    ],
+    [
+      "Embedded & hardware",
+      "ESP32, Arduino, ESP-IDF, PD motor control, sensor arrays, I²C/SPI displays, nRF24 radios"
+    ],
+    [
+      "Software & tools",
+      "Git, VS Code, Flask, SQLAlchemy, MySQL, PostgreSQL, MATLAB, Cisco Packet Tracer"
+    ],
+    [
+      "Learning",
+      "PCB design, React, TypeScript, Node.js"
+    ]
+  ],
+  "projects": [
+    {
+      "title": "CPU Scheduler Visualizer",
+      "meta": "C++ · ESP32",
+      "link": "https://github.com/1467mutasim-ctrl/CPU-Scheduler",
+      "bullets": [
+        "Handheld device that teaches CPU scheduling on two displays (SSD1306 OLED, 240×240 ST7789 IPS) and four buttons.",
+        "Five algorithms (FCFS, SJF, SRTF, Priority, Round Robin) with step-by-step playback, a live Gantt chart, waiting, turnaround, and response-time metrics, and a Compare All mode."
+      ]
+    },
+    {
+      "title": "Robo Soccer Robot",
+      "meta": "Designer and builder",
+      "bullets": [
+        "Designed and built a soccer robot from scratch and tested it for competition: runners-up at NRC 2025, 4th at IUBAT."
+      ]
+    },
+    {
+      "title": "Line-Following Robots (Mark-X, Head Hunter)",
+      "meta": "Hardware and firmware",
+      "bullets": [
+        "Made physical modifications, software changes, and firmware updates across several build iterations.",
+        "Mark-X firmware: PD control over a 16-sensor array read through an analog multiplexer, with a state machine for gaps, junction priority, inverted-line sections, and a finish-box auto-stop."
+      ]
+    },
+    {
+      "title": "ESP32 Wireless Signal Analyzer and Smart Clock",
+      "meta": "ESP32",
+      "bullets": [
+        "Wireless signal analyzer with an ST7789 display for Wi-Fi channel analysis and Bluetooth scanning.",
+        "Smart clock on an SSD1306 OLED with weather integration, animations, and power-saving features."
+      ]
+    },
+    {
+      "title": "Web Applications",
+      "meta": "Python · Flask · Java",
+      "bullets": [
+        "Art Attack: Flask and SQLAlchemy art marketplace with team battles, moderation, checkout, and PDF receipts.",
+        "Restaurant Management System: Java web app with staff roles, reservations, orders, and billing.",
+        "Q-Less Printing (in progress): printing service for BUP built with React, TypeScript, Node.js, and PostgreSQL."
+      ]
+    }
+  ],
+  "leadership": [
+    {
+      "title": "Technical Team Head",
+      "meta": "Circuit Clash 1.0",
+      "bullets": [
+        "Led technical operations for a national-level engineering competition: setup, troubleshooting, and live coordination."
+      ]
+    },
+    {
+      "title": "Technical Lead",
+      "meta": "SafetyPod",
+      "bullets": [
+        "Technical lead for the team developing SafetyPod, a safety device."
+      ]
+    },
+    {
+      "title": "Workshop Contributor",
+      "meta": "Soccer Bot Workshop",
+      "bullets": [
+        "Helped participants learn robot movement, control systems, and hardware integration in hands-on sessions."
+      ]
+    }
+  ],
+  "achievements": [
+    "Runners-up, Robo Soccer, National Robotics Championship 2025.",
+    "Top 10, Robo Fusion (UFTB) with Team DurontoJatra; qualified for the World SDG Challenge 2026, Kuala Lumpur.",
+    "4th place, Soccer Bot segment, IUBAT Robotics Competition · 5th place, Machine Mania 3.0, BUTEX.",
+    "Exhibited AgroBot with Team QuadBits at Bangladesh Innovation Fair 2026.",
+    "Silver and bronze medals in taekwondo at the National Games, 2016 and 2017."
+  ]
+}

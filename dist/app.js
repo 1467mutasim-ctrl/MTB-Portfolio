@@ -18,7 +18,7 @@ let lastTrigger = null;
 document.querySelectorAll('[data-lightbox]').forEach(trigger => trigger.addEventListener('click', () => {
   lastTrigger = trigger;
   lightboxImage.src = trigger.dataset.lightbox;
-  lightboxImage.alt = trigger.querySelector('img').alt;
+  lightboxImage.alt = trigger.dataset.alt || trigger.querySelector('img')?.alt || '';
   lightboxCaption.textContent = trigger.dataset.caption;
   lightbox.showModal();
   document.body.classList.add('dialog-open');

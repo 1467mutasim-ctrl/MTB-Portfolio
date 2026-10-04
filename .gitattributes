@@ -1,0 +1,9 @@
+# Keep line endings normalized for text, and never rewrite binary assets.
+* text=auto
+*.pdf binary
+*.webp binary
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.woff2 binary
+*.ttf binary
